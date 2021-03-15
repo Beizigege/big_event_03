@@ -25,9 +25,9 @@ function getUserInfo() {
         url: '/my/userinfo',
         type: "get",
         // // 配置头信息，设置token，身份识别认证！
-        headers: {
-            Authorization: localStorage.getItem("token") || ""
-        },
+        // headers: {
+        //     Authorization: localStorage.getItem("token") || ""
+        // },
         success: function (res) {
             console.log(res);
             if (res.status != 0) {
